@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Expense Tracker with Chart</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Expense Tracker</h1>
+    <input type="text" id="inputField" placeholder="Enter a number">
+    <button id="addButton">Add</button>
+    <button id="subtractButton">Subtract</button>
+    <button id="multiplyButton">Multiply</button>
+    <button id="divideButton">Divide</button>
+    <p id="result">Result will be displayed here</p>
+    <p id="errorMessage" class="hidden">Error: Division by zero</p>
+    
+    <!-- Canvas element for Chart.js -->
+    <canvas id="myChart" width="400" height="200"></canvas>
+    
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
